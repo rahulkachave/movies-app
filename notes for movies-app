@@ -1,1 +1,25 @@
 
+movies.map((Element)=> {
+            return(
+            <Movie
+            title={Element.Title}
+            year={Element.Year}
+            img={Element.Poster}
+            />
+            )
+          })
+          movies map ()
+          This code appears to be using the .map() method to iterate over an array of movie objects and create a new array of <Movie> components.
+        --------------------------------------------------------------------------------------------------
+        import movies from './movie.json'
+        
+        movies is create a only name its not any file and folder
+        its for a store the data in array form 
+        example
+        [
+    {
+      "imdbID": "tt0096895",
+      "Title": "Batman",
+      "Year": "1998",
+      "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTYwNjAyODIyMF5BMl5BanBnXkFtZTYwNDMwMDk2._V1_.jpg"
+    },
