@@ -1,13 +1,14 @@
-
+{
 movies.map((Element)=> {
             return(
             <Movie
-            title={Element.Title}
+            title={Element.Title}  //Title Year is same name as json data
             year={Element.Year}
             img={Element.Poster}
             />
             )
           })
+          }
           movies map ()
           This code appears to be using the .map() method to iterate over an array of movie objects and create a new array of <Movie> components.
         --------------------------------------------------------------------------------------------------
