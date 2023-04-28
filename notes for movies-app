@@ -1,14 +1,15 @@
 {
-movies.map((Element)=> {
+          movies.map((Element,index)=> { //its for a movies js file
             return(
             <Movie
-            title={Element.Title}  //Title Year is same name as json data
+             key ={index}//Each child in a list should have a unique "key" prop.
+            Title={Element.Title} //import the movie json file
             year={Element.Year}
             img={Element.Poster}
             />
             )
           })
-          }
+        }
           movies map ()
           This code appears to be using the .map() method to iterate over an array of movie objects and create a new array of <Movie> components.
         --------------------------------------------------------------------------------------------------
@@ -24,3 +25,5 @@ movies.map((Element)=> {
       "Year": "1998",
       "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTYwNjAyODIyMF5BMl5BanBnXkFtZTYwNDMwMDk2._V1_.jpg"
     },
+     --------------------------------------------------------------------------
+     key ={index}//Each child in a list should have a unique "key" prop.
